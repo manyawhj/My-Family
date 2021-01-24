@@ -1,0 +1,49 @@
+<html>
+<tittle> My Family </tittle>
+<body> <p>
+<img id= "img1"  src = "intro.jfif" style="width:500px;height:500px;"> </p> 
+<p> <button id="B1" onclick="changeimg();"> Next </button>
+<p id="name"> My Family Book </p> 
+<p id="Rela"> Relation </p>
+<script>
+var name_family=[
+"Manya Jha","Mayan Jha","Priti Jha","Vivek Jha","Abhishek Jha","G.C.Jha","Uma Jha"
+];
+var img=[
+"Me.jpg","Brother.jpg","Mother.jpg","Father.jpg","Uncle.jpg","Grand Father.jpg","Grand Mother.jpg"
+];
+var relation_family=[
+"Myself","Younger Brother","Mother","Father","Uncle","Grand Father","Grand Mother"
+];
+var i= 0;
+function changeimg(){
+document.getElementById("name").innerHTML=name_family[i];
+document.getElementById("img1").src=img[i];
+document.getElementById("Rela").innerHTML=relation_family[i];
+i++;}
+
+</script>
+<style>
+    body{
+text-align:center;
+background-color:#64FFDA;
+}
+tittle{
+color: blue;
+font-size:50pt;
+font-family:Arial Black;
+}
+#img1{
+border-style:solid;
+border-color:blue;
+}
+#name{
+font-size:40pt;
+color:rgb(10, 219, 247);
+}
+#Rela{
+font-size:40pt;
+color:rgb(25, 173, 192);
+}
+</style>
+</body>
